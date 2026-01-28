@@ -1,6 +1,5 @@
-package com.arrayapp.service.validator;
+package org.tanyab.task1.validator;
 
-public interface ArrayValidator {
-    boolean validateArrayData(String data);
-    boolean validateArrayLength(int length);
+public interface CustomArrayValidator {
+    boolean isValidLine(String line);
 }

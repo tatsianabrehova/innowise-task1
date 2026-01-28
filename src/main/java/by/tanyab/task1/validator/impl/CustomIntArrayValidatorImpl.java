@@ -1,48 +1,36 @@
-package com.arrayapp.service.validator.impl;
+package org.tanyab.task1.validator.impl;
 
-import com.arrayapp.service.validator.ArrayValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.tanyab.task1.validator.CustomArrayValidator;
 
-public class ArrayValidatorImpl implements ArrayValidator {
-    private static final Logger logger = LogManager.getLogger(ArrayValidatorImpl.class);
-    private static final String NUMBER_PATTERN = "^-?\\d+$";
-    private static final String ARRAY_DATA_PATTERN = "^[\\d\\s,;\\-]+$";
+import java.util.regex.Pattern;
 
-    @Override
-    public boolean validateArrayData(String data) {
-        if (data == null || data.trim().isEmpty()) {
-            logger.debug("Empty or null data is considered valid for empty array");
-            return true;
-        }
 
-        String trimmedData = data.trim();
-        boolean isValid = trimmedData.matches(ARRAY_DATA_PATTERN);
-
-        if (!isValid) {
-            logger.warn("Invalid array data: {}", data);
-        }
-
-        return isValid;
-    }
+public class CustomArrayValidatorImpl implements CustomArrayValidator {
+    private static final Logger logger = LogManager.getLogger();
+    private static final Pattern VALID_LINE =
+            Pattern.compile("^\\s*(-?\\d+([; ,\\-]+)?)*\\s*$");
 
     @Override
-    public boolean validateArrayLength(int length) {
-        boolean isValid = length >= 0;
+    public boolean isValidLine(String line){
+        logger.debug("Start validating line: '{}'", line);
 
-        if (!isValid) {
-            logger.error("Invalid array length: {}", length);
+        if (line == null || line.isBlank()) {
+            logger.warn("Line is null or blank: '{}'", line);
+
+            return false;
         }
 
-        return isValid;
-    }
+        boolean isValid = VALID_LINE.matcher(line).matches();
 
-    public boolean validateNumber(String number) {
-        boolean isValid = number != null && number.matches(NUMBER_PATTERN);
-
-        if (!isValid) {
-            logger.warn("Invalid number format: {}", number);
+        if (isValid) {
+            logger.info("Line is valid: '{}'", line);
+        } else {
+            logger.error("Line is invalid: '{}'", line);
         }
+
+        logger.debug("Validation result for line '{}': {}", line, isValid);
 
         return isValid;
     }
