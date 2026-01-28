@@ -2,7 +2,7 @@ package org.tanyab.task1.entity;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 
 import java.util.Arrays;
 
@@ -80,7 +80,7 @@ public class CustomArray {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        IntArrayEntity that = (IntArrayEntity) o;
+        CustomArray that = (CustomArray) o;
         return id.equals(that.id) && Arrays.equals(array, that.array);
     }
 

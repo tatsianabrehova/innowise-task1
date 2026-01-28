@@ -1,13 +1,13 @@
-package org.tanyab.task1.validator.impl;
+package by.tanyab.task1.validator.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.validator.CustomArrayValidator;
+import org.tanyab.task1.validator.CustomIntArrayValidator;
 
 import java.util.regex.Pattern;
 
 
-public class CustomArrayValidatorImpl implements CustomArrayValidator {
+public class CustomIntArrayValidatorImpl implements CustomIntArrayValidator {
     private static final Logger logger = LogManager.getLogger();
     private static final Pattern VALID_LINE =
             Pattern.compile("^\\s*(-?\\d+([; ,\\-]+)?)*\\s*$");

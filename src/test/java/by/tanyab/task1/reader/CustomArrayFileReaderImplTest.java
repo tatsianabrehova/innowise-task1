@@ -1,7 +1,7 @@
 package org.tanyab.task1.reader.impl;
 
 import org.junit.jupiter.api.Test;
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 import org.tanyab.task1.reader.CustomArrayFileReader;
 
 import java.util.List;

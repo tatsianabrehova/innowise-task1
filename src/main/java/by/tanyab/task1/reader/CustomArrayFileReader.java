@@ -1,6 +1,6 @@
 package org.tanyab.task1.reader;
 
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 
 import java.util.List;
 

@@ -3,7 +3,7 @@ package org.tanyab.task1.service.impl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.tanyab.task1.entity.CustomArray;
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 import org.tanyab.task1.service.impl.ArrayOperationsServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -2,7 +2,7 @@ package org.tanyab.task1.reader.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 import org.tanyab.task1.reader.CustomArrayFileReader;
 
 import java.io.IOException;

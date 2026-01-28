@@ -3,8 +3,7 @@ package org.tanyab.task1.service.impl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.tanyab.task1.entity.CustomArray;
-import org.tanyab.task1.exception.CustomArrayException;
-import org.tanyab.task1.service.impl.ArraySortService;
+import by.tanyab.task1.exception.CustomArrayException;
 
 public class ArraySortServiceImpl implements ArraySortService {
     private static final Logger logger = LogManager.getLogger();

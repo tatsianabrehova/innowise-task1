@@ -1,5 +1,5 @@
 package org.tanyab.task1.validator;
 
-public interface CustomArrayValidator {
+public interface CustomIntArrayValidator {
     boolean isValidLine(String line);
 }

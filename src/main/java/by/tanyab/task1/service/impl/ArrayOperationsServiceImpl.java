@@ -1,10 +1,10 @@
-package org.tanyab.task1.service.impl.impl;
+package org.tanyab.task1.service.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.tanyab.task1.entity.CustomArray;
-import org.tanyab.task1.exception.CustomArrayException;
-import org.tanyab.task1.service.impl.ArrayOperations;
+import by.tanyab.task1.exception.CustomArrayException;
+import org.tanyab.task1.service.impl.ArrayOperationsService;
 
 public class ArrayOperationsServiceImpl implements ArrayOperationsService {
     private static final Logger logger = LogManager.getLogger();

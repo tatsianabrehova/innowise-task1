@@ -1,4 +1,4 @@
-package org.tanyab.task1.exception;
+package by.tanyab.task1.exception;
 
 public class CustomArrayException extends Exception {
     public CustomArrayException(String message) {

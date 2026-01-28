@@ -2,7 +2,7 @@ package org.tanyab.task1.entity;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.exception.CustomArrayException;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <property name="LOG_DIR">src/main/resources/logs</property>
+        <property name="LOG_DIR">logs</property>
         <property name="pattern_console">%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</property>
         <property name="pattern_file">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</property>
     </Properties>
@@ -11,27 +11,31 @@
             <PatternLayout pattern="${pattern_console}"/>
         </Console>
 
-        <RollingFile name="FileRolling"
-                     fileName="${LOG_DIR}/custom_array_app.log"
-                     filePattern="${LOG_DIR}/archive/custom_array_app-%d{yyyy-MM-dd}-%i.log">
+        <RollingFile name="FileAppender"
+                     fileName="${LOG_DIR}/custom_array.log"
+                     filePattern="${LOG_DIR}/custom_array-%d{yyyy-MM-dd}-%i.log.gz">
             <PatternLayout pattern="${pattern_file}"/>
             <Policies>
-                <SizeBasedTriggeringPolicy size="1 MB"/>
-                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
             </Policies>
-            <DefaultRolloverStrategy max="5"/>
+            <DefaultRolloverStrategy max="10"/>
         </RollingFile>
     </Appenders>
 
     <Loggers>
-        <Logger name="by.egoramel.ft" level="DEBUG" additivity="false">
-            <AppenderRef ref="Console" level="DEBUG"/>
-            <AppenderRef ref="FileRolling" level="DEBUG"/>
+        <!-- Ваш пакет -->
+        <Logger name="by.tanyab.task1" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
         </Logger>
+
+        <!-- Log4j внутренние логи -->
+        <Logger name="org.apache.logging.log4j" level="WARN"/>
 
         <Root level="INFO">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileRolling"/>
+            <AppenderRef ref="FileAppender"/>
         </Root>
     </Loggers>
 </Configuration>
