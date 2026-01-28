@@ -4,5 +4,5 @@ import org.tanyab.task1.entity.CustomArray;
 import org.tanyab.task1.exception.CustomArrayException;
 
 public interface ArraySortService {
-    void bubbleSort(IntArrayEntity array) throws CustomArrayException;
+    void bubbleSort(CustomArray array) throws CustomArrayException;
 }

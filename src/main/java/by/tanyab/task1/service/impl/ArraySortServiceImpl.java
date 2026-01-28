@@ -1,15 +1,15 @@
-package org.tanyab.task1.service.impl.impl;
+package org.tanyab.task1.service.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.tanyab.task1.entity.CustomArray;
 import org.tanyab.task1.exception.CustomArrayException;
-import org.ktanyab.task1.service.impl.ArraySortService;
+import org.tanyab.task1.service.impl.ArraySortService;
 
 public class ArraySortServiceImpl implements ArraySortService {
     private static final Logger logger = LogManager.getLogger();
 
-    public void bubbleSort(IntArrayEntity array) throws CustomArrayException {
+    public void bubbleSort(CustomArray array) throws CustomArrayException {
         logger.info("Start bubble sort for array id={}", array.getId());
 
         for (int i = 0; i < array.getSize() - 1; i++) {
@@ -25,7 +25,7 @@ public class ArraySortServiceImpl implements ArraySortService {
         logger.info("Bubble sort finished for array id={}", array.getId());
     }
 
-    public void selectionSort(IntArrayEntity array) throws CustomArrayException {
+    public void selectionSort(CustomArray array) throws CustomArrayException {
         logger.info("Start selection sort for array id={}", array.getId());
 
         for (int i = 0; i < array.getSize(); i++) {
@@ -44,7 +44,7 @@ public class ArraySortServiceImpl implements ArraySortService {
         logger.info("Selection sort finished for array id={}", array.getId());
     }
 
-    private void swap(IntArrayEntity array, int index1, int index2) throws CustomArrayException {
+    private void swap(CustomArray array, int index1, int index2) throws CustomArrayException {
         int temp = array.getElementByIndex(index1);
         array.setElementByIndex(index1, array.getElementByIndex(index2));
         array.setElementByIndex(index2, temp);

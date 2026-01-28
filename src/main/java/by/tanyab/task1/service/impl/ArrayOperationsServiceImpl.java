@@ -1,16 +1,16 @@
-package org.kharlamova.task.service.impl.impl;
+package org.tanyab.task1.service.impl.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.kharlamova.task.entity.IntArrayEntity;
-import org.kharlamova.task.exception.CustomArrayException;
-import org.kharlamova.task.service.impl.ArrayOperations;
+import org.tanyab.task1.entity.CustomArray;
+import org.tanyab.task1.exception.CustomArrayException;
+import org.tanyab.task1.service.impl.ArrayOperations;
 
-public class ArrayOperationsImpl implements ArrayOperations {
+public class ArrayOperationsServiceImpl implements ArrayOperationsService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public int max(IntArrayEntity array) throws CustomArrayException {
+    public int max(CustomArray array) throws CustomArrayException {
         logger.info("Calculating max value for array id={}", array.getId());
 
 
@@ -29,7 +29,7 @@ public class ArrayOperationsImpl implements ArrayOperations {
     }
 
     @Override
-    public int min(IntArrayEntity array) throws CustomArrayException {
+    public int min(CustomArray array) throws CustomArrayException {
         logger.info("Calculating min value for array id={}", array.getId());
 
 
@@ -48,7 +48,7 @@ public class ArrayOperationsImpl implements ArrayOperations {
     }
 
     @Override
-    public double sumValues(IntArrayEntity array) throws CustomArrayException {
+    public double sumValues(CustomArray array) throws CustomArrayException {
         logger.info("Calculating sum for array id={}", array.getId());
 
         double sum = 0;
