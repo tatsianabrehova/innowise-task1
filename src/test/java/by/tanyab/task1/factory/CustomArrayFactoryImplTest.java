@@ -12,7 +12,7 @@ public class CustomArrayFactoryImplTest {
         CustomArrayFactory factory = new CustomArrayFactoryImpl();
         int[] sourceArray = {1, 2, 3};
 
-        IntArrayEntity result = factory.createArray(1L, sourceArray);
+        CustomArray result = factory.createArray(1L, sourceArray);
 
         assertNotNull(result);
         assertEquals(1L, result.getId());
@@ -24,7 +24,7 @@ public class CustomArrayFactoryImplTest {
         CustomArrayFactory factory = new CustomArrayFactoryImpl();
         int[] sourceArray = {5, 10, 15};
 
-        IntArrayEntity result = factory.createArray(2L, sourceArray);
+        CustomArray result = factory.createArray(2L, sourceArray);
 
         sourceArray[0] = 999; // меняем исходный массив
 

@@ -1,4 +1,4 @@
-package org.tanyab.task1.reader;
+package by.tanyab.task1.reader;
 
 import by.tanyab.task1.exception.CustomArrayException;
 

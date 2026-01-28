@@ -1,4 +1,4 @@
-package org.tanyab.task1.entity;
+package by.tanyab.task1.entity;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

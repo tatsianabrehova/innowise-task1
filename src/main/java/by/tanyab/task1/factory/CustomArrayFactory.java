@@ -1,4 +1,4 @@
-package org.tanyab.task1.factory;
+package by.tanyab.task1.factory;
 
 import org.tanyab.task1.entity.CustomArray;
 
