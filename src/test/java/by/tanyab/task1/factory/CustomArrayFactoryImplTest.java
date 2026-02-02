@@ -18,7 +18,26 @@ public class CustomArrayFactoryImplTest {
         assertEquals(1L, result.getId());
         assertArrayEquals(sourceArray, result.getArray());
     }
+    @Test
+    void testCreateArrayWithNull() {
+        CustomArrayFactory factory = new CustomArrayFactoryImpl();
 
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> factory.createArray(3L, null)
+        );
+    }
+    @Test
+    void testCreateArrayWithNullId() {
+        CustomArrayFactory factory = new CustomArrayFactoryImpl();
+        int[] array = {1, 2, 3};
+
+        CustomArray result = factory.createArray(null, array);
+
+        assertNotNull(result);
+        assertNull(result.getId());
+        assertArrayEquals(array, result.getArray());
+    }
     @Test
     void testArrayIsCloned() {
         CustomArrayFactory factory = new CustomArrayFactoryImpl();

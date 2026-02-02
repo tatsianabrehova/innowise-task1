@@ -19,7 +19,22 @@ public class CustomArrayTest {
         int size = arrayEntity.getSize();
         assertEquals(5, size);
     }
+    @Test
+    void testConstructorWithNullArray() {
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> new CustomArray(1L, null)
+        );
+    }
+    @Test
+    void testSetArrayReturnsCopy() throws CustomArrayException {
+        int[] newArray = {10, 20, 30};
+        arrayEntity.setArray(newArray);
+        newArray[0] = 999;
 
+        assertNotEquals(999, arrayEntity.getElementByIndex(0));
+        assertEquals(10, arrayEntity.getElementByIndex(0));
+    }
     @Test
     void testGetElementByIndexValid() throws CustomArrayException {
         int value = arrayEntity.getElementByIndex(2);

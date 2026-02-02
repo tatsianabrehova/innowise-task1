@@ -9,4 +9,6 @@ public interface ArrayOperationsService {
     int min(CustomArray array) throws CustomArrayException;
 
     double sumValues(CustomArray array) throws CustomArrayException;
+
+    double calculateAverage(CustomArray array) throws CustomArrayException;
 }

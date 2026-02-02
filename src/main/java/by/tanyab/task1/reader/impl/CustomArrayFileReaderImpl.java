@@ -33,10 +33,8 @@ public class CustomArrayFileReaderImpl implements CustomArrayFileReader {
             Path path = FileSystems.getDefault().getPath(dirName, fileName);
             logger.info("Reading file: {}", path);
 
-            // Читаем ВСЕ строки из файла
             List<String> allLines = Files.readAllLines(path, StandardCharsets.UTF_8);
 
-            // Если есть валидатор - фильтруем строки
             if (validator != null) {
                 List<String> validLines = allLines.stream()
                         .filter(line -> {
@@ -52,7 +50,7 @@ public class CustomArrayFileReaderImpl implements CustomArrayFileReader {
                         allLines.size(), validLines.size());
                 return validLines;
             } else {
-                // Если валидатора нет - возвращаем все строки
+                // если валидатора нет - возвращаем все строки
                 logger.info("File read successfully. Lines count: {}", allLines.size());
                 return allLines;
             }

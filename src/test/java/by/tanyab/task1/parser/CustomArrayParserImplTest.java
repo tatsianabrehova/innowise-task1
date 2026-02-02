@@ -58,8 +58,11 @@ public class CustomArrayParserImplTest {
     @Test
     void shouldReturnEmptyArrayForNullString() {
         String line = null;
-        int[] expected = {};
 
-        assertThrows(NullPointerException.class, () -> parser.parse(line));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> parser.parse(line),
+                "Parser should throw IllegalArgumentException for null input"
+        );
     }
 }

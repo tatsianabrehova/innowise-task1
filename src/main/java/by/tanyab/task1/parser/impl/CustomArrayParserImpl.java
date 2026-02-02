@@ -15,6 +15,11 @@ public class CustomArrayParserImpl implements CustomArrayParser {
     private static final Pattern NUMBER_REGEX = Pattern.compile("-?\\d+");
 
     public int[] parse(String line) {
+
+        if (line == null) {
+            logger.error("Attempt to parse null line");
+            throw new IllegalArgumentException("Line cannot be null");
+        }
         logger.debug("Start parsing line: {}", line);
 
         List<Integer> numbers = new ArrayList<>();

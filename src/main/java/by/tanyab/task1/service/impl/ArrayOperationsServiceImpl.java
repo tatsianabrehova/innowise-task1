@@ -61,4 +61,15 @@ public class ArrayOperationsServiceImpl implements ArrayOperationsService {
 
         return sum;
     }
+
+    @Override
+    public double calculateAverage(CustomArray array) throws CustomArrayException {
+        if (array == null || array.getSize() == 0) {
+            throw new CustomArrayException("Array is empty or null");
+        }
+
+        double sum = sumValues(array);
+        logger.info("Average calculated: {}", sum / array.getSize());
+        return sum / array.getSize();
+    }
 }

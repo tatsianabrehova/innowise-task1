@@ -3,8 +3,11 @@ package by.tanyab.task1.entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import by.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.observer.CustomArrayObserver;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CustomArray {
     private static final Logger logger = LogManager.getLogger();
@@ -13,7 +16,12 @@ public class CustomArray {
 
     private int[] array;
 
+    private List<CustomArrayObserver> observers = new ArrayList<>();
+
     public CustomArray(Long id, int[] array) {
+        if (array == null) {
+            throw new IllegalArgumentException("Array cannot be null");
+        }
         this.id = id;
         this.array = array.clone();
 
@@ -25,11 +33,12 @@ public class CustomArray {
     }
 
     public void setArray(int[] array) {
-        logger.debug(
-                "CustomArray updated for id={}",
-                id
-        );
-        this.array = array;
+        if (array == null) {
+            throw new IllegalArgumentException("Array cannot be null");
+        }
+        logger.debug("CustomArray updated for id={}", id);
+        this.array = array.clone();
+        notifyObservers();
     }
 
     public Long getId() {
@@ -39,6 +48,7 @@ public class CustomArray {
     public void setId(Long id) {
         logger.debug("Id changed from {} to {}", this.id, id);
         this.id = id;
+        notifyObservers();
     }
 
     public int getSize() {
@@ -74,6 +84,7 @@ public class CustomArray {
         }
 
         array[index] = value;
+        notifyObservers();
     }
 
     @Override
