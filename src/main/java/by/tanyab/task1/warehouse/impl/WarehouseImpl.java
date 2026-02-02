@@ -40,7 +40,6 @@ public class WarehouseImpl implements Warehouse, CustomArrayObserver {
         try {
             ArrayOperationsService service = new ArrayOperationsServiceImpl();
 
-            // Рассчитываем статистику
             int sum = (int) service.sumValues(array);
             double average = service.calculateAverage(array);
             int max = service.max(array);

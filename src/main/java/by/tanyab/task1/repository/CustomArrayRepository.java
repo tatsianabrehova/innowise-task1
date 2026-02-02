@@ -113,4 +113,8 @@ public class CustomArrayRepository {
     public boolean containsElement(CustomArray array) {
         return contains(array);
     }
+    public void clear() {
+        logger.debug("Clearing repository");
+        arrays.clear();
+    }
 }

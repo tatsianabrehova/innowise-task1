@@ -3,6 +3,7 @@ package by.tanyab.task1.entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import by.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.observer.CustomArrayEvent;
 import by.tanyab.task1.observer.CustomArrayObserver;
 
 import java.util.ArrayList;
@@ -109,5 +110,19 @@ public class CustomArray {
                 id,
                 Arrays.toString(array)
         );
+    }
+    public void addObserver(CustomArrayObserver observer) {
+        observers.add(observer);
+    }
+
+    public void removeObserver(CustomArrayObserver observer) {
+        observers.remove(observer);
+    }
+
+    private void notifyObservers() {
+        CustomArrayEvent event = new CustomArrayEvent(this);
+        for (CustomArrayObserver observer : observers) {
+            observer.update(event);
+        }
     }
 }

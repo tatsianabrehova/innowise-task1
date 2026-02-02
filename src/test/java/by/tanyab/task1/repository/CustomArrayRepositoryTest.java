@@ -21,11 +21,9 @@ public class CustomArrayRepositoryTest {
 
     @BeforeEach
     void setUp() {
-        // Очищаем репозиторий перед каждым тестом
         repository = CustomArrayRepository.getInstance();
         repository.clear();
 
-        // Добавляем тестовые данные
         repository.add(new CustomArray(1L, new int[]{1, 2, 3}));
         repository.add(new CustomArray(2L, new int[]{10, 20}));
         repository.add(new CustomArray(3L, new int[]{5}));
@@ -49,11 +47,11 @@ public class CustomArrayRepositoryTest {
 
     private static Stream<Arguments> provideIdTestData() {
         return Stream.of(
-                Arguments.of(1L, true),    // существует
-                Arguments.of(2L, true),    // существует
-                Arguments.of(3L, true),    // существует
-                Arguments.of(10L, false),  // не существует
-                Arguments.of(-1L, false)   // не существует
+                Arguments.of(1L, true),    // сущ
+                Arguments.of(2L, true),    // сущ
+                Arguments.of(3L, true),    // сущ
+                Arguments.of(10L, false),  // не сущ
+                Arguments.of(-1L, false)   // не сущ
         );
     }
 
@@ -71,7 +69,7 @@ public class CustomArrayRepositoryTest {
 
     private static Stream<Arguments> provideSizeTestData() {
         return Stream.of(
-                Arguments.of(1, 1),  // один массив размером 1
+                Arguments.of(1, 1),
                 Arguments.of(2, 1),  // один массив размером 2
                 Arguments.of(3, 2),  // два массива размером 3
                 Arguments.of(4, 0),  // нет массивов размером 4
@@ -128,11 +126,11 @@ public class CustomArrayRepositoryTest {
 
     private static Stream<Arguments> provideQueryStreamTestData() {
         return Stream.of(
-                Arguments.of(1, 2),    // есть в массивах [1,2,3] и [-1,0,1]
-                Arguments.of(10, 1),   // есть в массиве [10,20]
-                Arguments.of(100, 1),  // есть в массиве [100,200,300]
-                Arguments.of(999, 0),  // нет нигде
-                Arguments.of(0, 1)     // есть в массиве [-1,0,1]
+                Arguments.of(1, 2),
+                Arguments.of(10, 1),
+                Arguments.of(100, 1),
+                Arguments.of(999, 0),
+                Arguments.of(0, 1)
         );
     }
 
