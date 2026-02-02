@@ -1,8 +1,8 @@
-package org.tanyab.task1.parser.impl;
+package by.tanyab.task1.parser.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.parser.CustomArrayParser;
+import by.tanyab.task1.parser.CustomArrayParser;
 
 import java.util.ArrayList;
 import java.util.List;

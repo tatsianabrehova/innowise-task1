@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface CustomArrayFileReader {
     List<String> readLines(String fileName, String dirName) throws CustomArrayException;
+    List<String> readLinesFromFile(String filePath) throws CustomArrayException;
 }

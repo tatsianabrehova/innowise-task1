@@ -1,6 +1,6 @@
-package org.tanyab.task1.service.impl;
+package by.tanyab.task1.service;
 
-import org.tanyab.task1.entity.CustomArray;
+import by.tanyab.task1.entity.CustomArray;
 import by.tanyab.task1.exception.CustomArrayException;
 
 public interface ArrayOperationsService {

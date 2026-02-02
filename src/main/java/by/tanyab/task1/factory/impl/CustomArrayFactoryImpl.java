@@ -1,9 +1,9 @@
-package org.tanyab.task1.factory.impl;
+package by.tanyab.task1.factory.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.entity.CustomArray;
-import org.tanyab.task1.factory.CustomArrayFactory;
+import by.tanyab.task1.entity.CustomArray;
+import by.tanyab.task1.factory.CustomArrayFactory;
 
 public class CustomArrayFactoryImpl implements CustomArrayFactory {
     private static final Logger logger = LogManager.getLogger();

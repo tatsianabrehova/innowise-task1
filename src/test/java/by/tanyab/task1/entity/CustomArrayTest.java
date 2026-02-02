@@ -1,4 +1,4 @@
-package org.tanyab.task1.entity;
+package by.tanyab.task1.entity;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -75,8 +75,8 @@ public class CustomArrayTest {
 
     @Test
     void testEqualsAndHashCode() {
-        IntArrayEntity sameEntity =
-                new IntArrayEntity(1L, new int[]{1, 2, 3, 4, 5});
+        CustomArray sameEntity =
+                new CustomArray(1L, new int[]{1, 2, 3, 4, 5});
 
         assertEquals(arrayEntity, sameEntity);
         assertEquals(arrayEntity.hashCode(), sameEntity.hashCode());
@@ -84,8 +84,8 @@ public class CustomArrayTest {
 
     @Test
     void testNotEquals() {
-        IntArrayEntity anotherEntity =
-                new IntArrayEntity(2L, new int[]{1, 2, 3});
+        CustomArray anotherEntity =
+                new CustomArray(2L, new int[]{1, 2, 3});
 
         assertNotEquals(arrayEntity, anotherEntity);
     }

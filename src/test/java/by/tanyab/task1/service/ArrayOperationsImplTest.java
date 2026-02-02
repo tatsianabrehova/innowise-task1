@@ -1,10 +1,10 @@
-package org.tanyab.task1.service.impl;
+package by.tanyab.task1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.tanyab.task1.entity.CustomArray;
+import by.tanyab.task1.entity.CustomArray;
 import by.tanyab.task1.exception.CustomArrayException;
-import org.tanyab.task1.service.impl.ArrayOperationsServiceImpl;
+import by.tanyab.task1.service.impl.ArrayOperationsServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

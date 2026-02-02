@@ -1,0 +1,766 @@
+2026-02-02 15:54:05.432 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - CustomArrayFileReaderImpl created with validator
+2026-02-02 15:54:05.435 [main] INFO  by.tanyab.task1.Main - Чтение данных из файла: src/test/resources/testData/test.txt
+2026-02-02 15:54:05.436 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Reading file: src/test/resources/testData/test.txt
+2026-02-02 15:54:05.436 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '1 2 3 4 5'
+2026-02-02 15:54:05.437 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '1 2 3 4 5'
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '1 2 3 4 5': true
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '10,20,30,40,50'
+2026-02-02 15:54:05.437 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '10,20,30,40,50'
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '10,20,30,40,50': true
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '5;10;15;20;25'
+2026-02-02 15:54:05.437 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '5;10;15;20;25'
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '5;10;15;20;25': true
+2026-02-02 15:54:05.437 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '-5 0 5 -10 15'
+2026-02-02 15:54:05.437 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '-5 0 5 -10 15'
+2026-02-02 15:54:05.438 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '-5 0 5 -10 15': true
+2026-02-02 15:54:05.438 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '100 200 300 400 500'
+2026-02-02 15:54:05.438 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '100 200 300 400 500'
+2026-02-02 15:54:05.438 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '100 200 300 400 500': true
+2026-02-02 15:54:05.438 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - File read successfully. Total lines: 5, Valid lines: 5
+2026-02-02 15:54:05.438 [main] INFO  by.tanyab.task1.Main - Валидных строк: 5
+2026-02-02 15:54:05.438 [main] INFO  by.tanyab.task1.Main - Обработка строки 1: 1 2 3 4 5
+2026-02-02 15:54:05.438 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 1 2 3 4 5
+2026-02-02 15:54:05.438 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 1
+2026-02-02 15:54:05.439 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 2
+2026-02-02 15:54:05.439 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 3
+2026-02-02 15:54:05.439 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 4
+2026-02-02 15:54:05.439 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 5
+2026-02-02 15:54:05.440 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:54:05.440 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=1
+2026-02-02 15:54:05.440 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=1
+2026-02-02 15:54:05.440 [main] INFO  by.tanyab.task1.Main - Создан массив ID 1: [1, 2, 3, 4, 5]
+2026-02-02 15:54:05.440 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [1, 2, 3, 4, 5]
+2026-02-02 15:54:05.440 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=10
+2026-02-02 15:54:05.441 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=10
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=4, value=5
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:54:05.441 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:54:05.442 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=10
+2026-02-02 15:54:05.442 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [1, 2, 3, 4, 5]
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=20
+2026-02-02 15:54:05.442 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=20
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:54:05.442 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=20
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [1, 2, 3, 4, 5]
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=1
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 5
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 5
+2026-02-02 15:54:05.443 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=1
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:54:05.443 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 1
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 1
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=1
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 15.0
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 15.0
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:54:05.444 [main] INFO  by.tanyab.task1.Main - Обработка строки 2: 10,20,30,40,50
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 10,20,30,40,50
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 10
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 20
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 30
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 40
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 50
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:54:05.444 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=2
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=2
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.Main - Создан массив ID 2: [10, 20, 30, 40, 50]
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [10, 20, 30, 40, 50]
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=20
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=50
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=20
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [10, 20, 30, 40, 50]
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=40
+2026-02-02 15:54:05.445 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=40
+2026-02-02 15:54:05.445 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=40
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [10, 20, 30, 40, 50]
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=2
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 50
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 50
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=2
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 10
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 10
+2026-02-02 15:54:05.446 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=2
+2026-02-02 15:54:05.446 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 150.0
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 150.0
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - Обработка строки 3: 5;10;15;20;25
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 5;10;15;20;25
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 5
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 15
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 20
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 25
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=3
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=3
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - Создан массив ID 3: [5, 10, 15, 20, 25]
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [5, 10, 15, 20, 25]
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=30
+2026-02-02 15:54:05.447 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=30
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=4, value=25
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:54:05.447 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=30
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [5, 10, 15, 20, 25]
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=60
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=60
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=60
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [5, 10, 15, 20, 25]
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=3
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:54:05.448 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 25
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 25
+2026-02-02 15:54:05.448 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=3
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 5
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 5
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=3
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 75.0
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 75.0
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - Обработка строки 4: -5 0 5 -10 15
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: -5 0 5 -10 15
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: -5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 0
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: -10
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 15
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=4
+2026-02-02 15:54:05.449 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=4
+2026-02-02 15:54:05.449 [main] INFO  by.tanyab.task1.Main - Создан массив ID 4: [-5, 0, 5, -10, 15]
+2026-02-02 15:54:05.450 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [-5, 0, 5, -10, 15]
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=40
+2026-02-02 15:54:05.450 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=40
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=15
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=-10
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=0
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=-5
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=-10
+2026-02-02 15:54:05.450 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=40
+2026-02-02 15:54:05.450 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [-10, -5, 0, 5, 15]
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=80
+2026-02-02 15:54:05.450 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=80
+2026-02-02 15:54:05.450 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=4, value=15
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=4, value=15
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=4, value=15
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=4, value=15
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=80, index=3, value=5
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=80
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [-10, -5, 0, 5, 15]
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=4
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=4, value=15
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 15
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 15
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=4
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=4, value=15
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: -10
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: -10
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=4
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=0, value=-5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=1, value=0
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=2, value=5
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=3, value=-10
+2026-02-02 15:54:05.451 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=4, index=4, value=15
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 5.0
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 5.0
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:54:05.451 [main] INFO  by.tanyab.task1.Main - Обработка строки 5: 100 200 300 400 500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 100 200 300 400 500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=5
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=5
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.Main - Создан массив ID 5: [100, 200, 300, 400, 500]
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [100, 200, 300, 400, 500]
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=50
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=50
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=4, value=500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=50, index=0, value=100
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=50
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [100, 200, 300, 400, 500]
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=100
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=4, value=500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=0, value=100
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=4, value=500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=1, value=200
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=3, value=400
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=4, value=500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=2, value=300
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=4, value=500
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=100, index=3, value=400
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=100
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [100, 200, 300, 400, 500]
+2026-02-02 15:54:05.452 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=5
+2026-02-02 15:54:05.452 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=0, value=100
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=0, value=100
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=1, value=200
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=2, value=300
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=3, value=400
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=4, value=500
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 500
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 500
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=5
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=0, value=100
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=0, value=100
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=1, value=200
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=2, value=300
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=3, value=400
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=4, value=500
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 100
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 100
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=5
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=0, value=100
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=1, value=200
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=2, value=300
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=3, value=400
+2026-02-02 15:54:05.453 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=5, index=4, value=500
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 1500.0
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 1500.0
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:54:05.453 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:58:44.541 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - CustomArrayFileReaderImpl created with validator
+2026-02-02 15:58:44.545 [main] INFO  by.tanyab.task1.Main - Чтение данных из файла: src/test/resources/testData/test.txt
+2026-02-02 15:58:44.545 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Reading file: src/test/resources/testData/test.txt
+2026-02-02 15:58:44.546 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '1 2 3 4 5'
+2026-02-02 15:58:44.546 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '1 2 3 4 5'
+2026-02-02 15:58:44.546 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '1 2 3 4 5': true
+2026-02-02 15:58:44.546 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '10,20, 30,40,50'
+2026-02-02 15:58:44.546 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '10,20, 30,40,50'
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '10,20, 30,40,50': true
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '5;10;15; 20;25'
+2026-02-02 15:58:44.547 [main] INFO  by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is valid: '5;10;15; 20;25'
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '5;10;15; 20;25': true
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: 'abc def ghi'
+2026-02-02 15:58:44.547 [main] ERROR by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is invalid: 'abc def ghi'
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line 'abc def ghi': false
+2026-02-02 15:58:44.547 [main] DEBUG by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Filtered out invalid line: abc def ghi
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '1.5 2.3 4.7'
+2026-02-02 15:58:44.548 [main] ERROR by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is invalid: '1.5 2.3 4.7'
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '1.5 2.3 4.7': false
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Filtered out invalid line: 1.5 2.3 4.7
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '1,2,3,4,5.'
+2026-02-02 15:58:44.548 [main] ERROR by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is invalid: '1,2,3,4,5.'
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '1,2,3,4,5.': false
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Filtered out invalid line: 1,2,3,4,5.
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Start validating line: '1@2#3$4%5'
+2026-02-02 15:58:44.548 [main] ERROR by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Line is invalid: '1@2#3$4%5'
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl - Validation result for line '1@2#3$4%5': false
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - Filtered out invalid line: 1@2#3$4%5
+2026-02-02 15:58:44.548 [main] INFO  by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl - File read successfully. Total lines: 7, Valid lines: 3
+2026-02-02 15:58:44.548 [main] INFO  by.tanyab.task1.Main - Валидных строк: 3
+2026-02-02 15:58:44.548 [main] INFO  by.tanyab.task1.Main - Обработка строки 1: 1 2 3 4 5
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 1 2 3 4 5
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 1
+2026-02-02 15:58:44.548 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 2
+2026-02-02 15:58:44.549 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 3
+2026-02-02 15:58:44.549 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 4
+2026-02-02 15:58:44.549 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 5
+2026-02-02 15:58:44.549 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:58:44.549 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=1
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=1
+2026-02-02 15:58:44.550 [main] INFO  by.tanyab.task1.Main - Создан массив ID 1: [1, 2, 3, 4, 5]
+2026-02-02 15:58:44.550 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [1, 2, 3, 4, 5]
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=10
+2026-02-02 15:58:44.550 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=10
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:58:44.550 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=4, value=5
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=3, value=4
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=2, value=3
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=10, index=0, value=1
+2026-02-02 15:58:44.551 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=10
+2026-02-02 15:58:44.551 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [1, 2, 3, 4, 5]
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=20
+2026-02-02 15:58:44.551 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=20
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:58:44.551 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=2
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=3
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=5
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=4
+2026-02-02 15:58:44.552 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=20
+2026-02-02 15:58:44.552 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [1, 2, 3, 4, 5]
+2026-02-02 15:58:44.552 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:58:44.552 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 5
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 5
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=1
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 1
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 1
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=1
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=0, value=1
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=1, value=2
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=2, value=3
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=3, value=4
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=1, index=4, value=5
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 15.0
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 15.0
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:58:44.553 [main] INFO  by.tanyab.task1.Main - Обработка строки 2: 10,20, 30,40,50
+2026-02-02 15:58:44.553 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 10,20, 30,40,50
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 10
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 20
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 30
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 40
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 50
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=2
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=2
+2026-02-02 15:58:44.554 [main] INFO  by.tanyab.task1.Main - Создан массив ID 2: [10, 20, 30, 40, 50]
+2026-02-02 15:58:44.554 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [10, 20, 30, 40, 50]
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=20
+2026-02-02 15:58:44.554 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=20
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.554 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=4, value=50
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=20, index=0, value=10
+2026-02-02 15:58:44.555 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=20
+2026-02-02 15:58:44.555 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [10, 20, 30, 40, 50]
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=40
+2026-02-02 15:58:44.555 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=0, value=10
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=1, value=20
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=2, value=30
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=4, value=50
+2026-02-02 15:58:44.555 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=40, index=3, value=40
+2026-02-02 15:58:44.555 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=40
+2026-02-02 15:58:44.555 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [10, 20, 30, 40, 50]
+2026-02-02 15:58:44.556 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=2
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:58:44.556 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 50
+2026-02-02 15:58:44.556 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 50
+2026-02-02 15:58:44.556 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=2
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:58:44.556 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:58:44.556 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 10
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 10
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=2
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=0, value=10
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=1, value=20
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=2, value=30
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=3, value=40
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=2, index=4, value=50
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 150.0
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 150.0
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Обработка строки 3: 5;10;15; 20;25
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Start parsing line: 5;10;15; 20;25
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 5
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 10
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 15
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 20
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Found number: 25
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.parser.impl.CustomArrayParserImpl - Parsed array size: 5
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.factory.impl.CustomArrayFactoryImpl - CustomArrayFactory created CustomArray with id=3
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=3
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Создан массив ID 3: [5, 10, 15, 20, 25]
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.Main - Массив до сортировки пузырьком: [5, 10, 15, 20, 25]
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=30
+2026-02-02 15:58:44.557 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start bubble sort for array id=30
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=4, value=25
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:58:44.557 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=3, value=20
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=30, index=0, value=5
+2026-02-02 15:58:44.558 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Bubble sort finished for array id=30
+2026-02-02 15:58:44.558 [main] INFO  by.tanyab.task1.Main - Массив после сортировки пузырьком: [5, 10, 15, 20, 25]
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - CustomArray created with id=60
+2026-02-02 15:58:44.558 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Start selection sort for array id=60
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=0, value=5
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=1, value=10
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=2, value=15
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=4, value=25
+2026-02-02 15:58:44.558 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=60, index=3, value=20
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArraySortServiceImpl - Selection sort finished for array id=60
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - Массив после сортировки выбором: [5, 10, 15, 20, 25]
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating max value for array id=3
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Max value calculated: 25
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - Максимальный элемент: 25
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating min value for array id=3
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Min value calculated: 5
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - Минимальный элемент: 5
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Calculating sum for array id=3
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=0, value=5
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=1, value=10
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=2, value=15
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=3, value=20
+2026-02-02 15:58:44.559 [main] DEBUG by.tanyab.task1.entity.CustomArray - Element accessed: id=3, index=4, value=25
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.service.impl.ArrayOperationsServiceImpl - Sum calculated: 75.0
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - Сумма элементов: 75.0
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - Среднее значение: {:.2f}
+2026-02-02 15:58:44.559 [main] INFO  by.tanyab.task1.Main - --------------------------------------------------

@@ -1,14 +1,15 @@
-package org.tanyab.task1.reader.impl;
+package by.tanyab.task1.reader;
 
+import by.tanyab.task1.reader.impl.CustomArrayFileReaderImpl;
 import org.junit.jupiter.api.Test;
 import by.tanyab.task1.exception.CustomArrayException;
-import org.tanyab.task1.reader.CustomArrayFileReader;
+import by.tanyab.task1.reader.CustomArrayFileReader;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ACustomArrayFileReaderImplTest {
+public class CustomArrayFileReaderImplTest {
     private final CustomArrayFileReader reader = new CustomArrayFileReaderImpl();
 
     @Test

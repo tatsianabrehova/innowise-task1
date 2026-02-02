@@ -1,17 +1,18 @@
-package org.tanyab.task1.validator.impl;
+package by.tanyab.task1.validator;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import by.tanyab.task1.validator.impl.CustomIntArrayValidatorImpl;
 
 public class CustomArrayValidatorImplTest {
-    private CustomArrayValidatorImpl validator;
+    private CustomIntArrayValidatorImpl validator;
 
     @BeforeEach
     void setUp() {
-        validator = new CustomArrayValidatorImpl();
+        validator = new CustomIntArrayValidatorImpl();
     }
 
     @Test

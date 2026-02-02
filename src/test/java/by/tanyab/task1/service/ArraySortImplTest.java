@@ -1,8 +1,10 @@
-package org.tanyab.task1.service.impl;
+package by.tanyab.task1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import by.tanyab.task1.entity.CustomArray;
 import by.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.service.impl.ArraySortServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -16,7 +18,7 @@ public class ArraySortImplTest {
 
     @Test
     void bubbleSortShouldSortUnsortedArray() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(1L, new int[]{5, 2, 4, 1, 3});
+        CustomArray array = new CustomArray(1L, new int[]{5, 2, 4, 1, 3});
         sorter.bubbleSort(array);
 
         int[] expected = {1, 2, 3, 4, 5};
@@ -25,7 +27,7 @@ public class ArraySortImplTest {
 
     @Test
     void bubbleSortShouldHandleEmptyArray() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(2L, new int[]{});
+        CustomArray array = new CustomArray(2L, new int[]{});
         sorter.bubbleSort(array);
 
         int[] expected = {};
@@ -34,7 +36,7 @@ public class ArraySortImplTest {
 
     @Test
     void bubbleSortShouldHandleSingleElement() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(3L, new int[]{42});
+        CustomArray array = new CustomArray(3L, new int[]{42});
         sorter.bubbleSort(array);
 
         int[] expected = {42};
@@ -43,7 +45,7 @@ public class ArraySortImplTest {
 
     @Test
     void bubbleSortShouldKeepSortedArrayUnchanged() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(4L, new int[]{1, 2, 3, 4, 5});
+        CustomArray array = new CustomArray(4L, new int[]{1, 2, 3, 4, 5});
         sorter.bubbleSort(array);
 
         int[] expected = {1, 2, 3, 4, 5};
@@ -52,7 +54,7 @@ public class ArraySortImplTest {
 
     @Test
     void selectionSortShouldSortUnsortedArray() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(5L, new int[]{7, 3, 5, 2, 6});
+        CustomArray array = new CustomArray(5L, new int[]{7, 3, 5, 2, 6});
         sorter.selectionSort(array);
 
         int[] expected = {2, 3, 5, 6, 7};
@@ -61,7 +63,7 @@ public class ArraySortImplTest {
 
     @Test
     void selectionSortShouldHandleEmptyArray() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(6L, new int[]{});
+        CustomArray array = new CustomArray(6L, new int[]{});
         sorter.selectionSort(array);
 
         int[] expected = {};
@@ -70,7 +72,7 @@ public class ArraySortImplTest {
 
     @Test
     void selectionSortShouldHandleSingleElement() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(7L, new int[]{99});
+        CustomArray array = new CustomArray(7L, new int[]{99});
         sorter.selectionSort(array);
 
         int[] expected = {99};
@@ -79,7 +81,7 @@ public class ArraySortImplTest {
 
     @Test
     void selectionSortShouldKeepSortedArrayUnchanged() throws CustomArrayException {
-        IntArrayEntity array = new IntArrayEntity(8L, new int[]{1, 2, 3, 4, 5});
+        CustomArray array = new CustomArray(8L, new int[]{1, 2, 3, 4, 5});
         sorter.selectionSort(array);
 
         int[] expected = {1, 2, 3, 4, 5};

@@ -1,9 +1,10 @@
-package org.tanyab.task1.service.impl;
+package by.tanyab.task1.service.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.tanyab.task1.entity.CustomArray;
+import by.tanyab.task1.entity.CustomArray;
 import by.tanyab.task1.exception.CustomArrayException;
+import by.tanyab.task1.service.ArraySortService;
 
 public class ArraySortServiceImpl implements ArraySortService {
     private static final Logger logger = LogManager.getLogger();
@@ -24,6 +25,7 @@ public class ArraySortServiceImpl implements ArraySortService {
         logger.info("Bubble sort finished for array id={}", array.getId());
     }
 
+    @Override
     public void selectionSort(CustomArray array) throws CustomArrayException {
         logger.info("Start selection sort for array id={}", array.getId());
 

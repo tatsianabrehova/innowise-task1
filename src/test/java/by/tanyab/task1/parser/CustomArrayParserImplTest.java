@@ -1,10 +1,11 @@
-package org.tanyab.task1.parser.impl;
+package by.tanyab.task1.parser;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import by.tanyab.task1.parser.impl.CustomArrayParserImpl;
 
 public class CustomArrayParserImplTest {
     private CustomArrayParserImpl parser;

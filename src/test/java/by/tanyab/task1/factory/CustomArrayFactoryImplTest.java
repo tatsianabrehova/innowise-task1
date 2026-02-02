@@ -1,8 +1,8 @@
-package org.tanyab.task1.factory.impl;
+package by.tanyab.task1.factory;
 
 import org.junit.jupiter.api.Test;
-import org.tanyab.task1.entity.CustomArray;
-import org.tanyab.task1.factory.CustomArrayFactoryImpl;
+import by.tanyab.task1.entity.CustomArray;
+import by.tanyab.task1.factory.impl.CustomArrayFactoryImpl;
 
 import static org.junit.jupiter.api.Assertions.*;
 
