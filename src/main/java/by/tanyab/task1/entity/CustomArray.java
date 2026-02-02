@@ -111,6 +111,7 @@ public class CustomArray {
                 Arrays.toString(array)
         );
     }
+
     public void addObserver(CustomArrayObserver observer) {
         observers.add(observer);
     }
